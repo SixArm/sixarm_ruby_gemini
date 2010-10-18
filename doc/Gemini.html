@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>Class: Gemini</title>
+
+	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+	<script src="./js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="./js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+	<div id="metadata">
+		<div id="file-metadata">
+			<div id="file-list-section" class="section">
+				<h3 class="section-header">In Files</h3>
+				<div class="section-body">
+					<ul>
+					
+						<li><a href="./lib/sixarm_ruby_gemini_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+							class="thickbox" title="lib/sixarm_ruby_gemini.rb">lib/sixarm_ruby_gemini.rb</a></li>
+					
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<div id="class-metadata">
+
+			<!-- Parent Class -->
+			
+			<div id="parent-class-section" class="section">
+				<h3 class="section-header">Parent</h3>
+				
+				<p class="link">Object</p>
+				
+			</div>
+			
+
+			<!-- Namespace Contents -->
+			
+
+			<!-- Method Quickref -->
+			
+			<div id="method-list-section" class="section">
+				<h3 class="section-header">Methods</h3>
+				<ul class="link-list">
+					
+					<li><a href="#M000003">::find</a></li>
+					
+					<li><a href="#M000005">::install</a></li>
+					
+					<li><a href="#M000012">::install_command</a></li>
+					
+					<li><a href="#M000010">::install_from_array</a></li>
+					
+					<li><a href="#M000011">::install_from_options</a></li>
+					
+					<li><a href="#M000006">::install_from_rails_root_config_gems_xml</a></li>
+					
+					<li><a href="#M000009">::install_from_xml_doc</a></li>
+					
+					<li><a href="#M000007">::install_from_xml_file</a></li>
+					
+					<li><a href="#M000008">::install_from_xml_text</a></li>
+					
+					<li><a href="#M000000">::installed?</a></li>
+					
+					<li><a href="#M000013">::sudo_gem_list</a></li>
+					
+					<li><a href="#M000014">::sudo_gem_list_installed?</a></li>
+					
+				</ul>
+			</div>
+			
+
+			<!-- Included Modules -->
+			
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_gemini_gemspec.html">sixarm_ruby_gemini.gemspec</a></li>
+				
+					<li class="file"><a href="./sixarm_ruby_gemini_sha512_txt.html">sixarm_ruby_gemini.sha512.txt</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="./images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="./Gemini.html">Gemini</a></li>
+				
+					<li><a href="./GeminiTest.html">GeminiTest</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1 class="class">Gemini</h1>
+
+		<div id="description">
+			
+		</div>
+
+		<!-- Constants -->
+		
+		<div id="constants-list" class="section">
+			<h3 class="section-header">Constants</h3>
+			<dl>
+			
+				<dt><a name="TRUST_POLICY_NICKNAME">TRUST_POLICY_NICKNAME</a></dt>
+				
+				<dd class="description missing-docs">(Not documented)</dd>
+				
+			
+			</dl>
+		</div>
+		
+
+		<!-- Attributes -->
+		
+
+		<!-- Methods -->
+		
+		<div id="public-class-method-details" class="method-section section">
+			<h3 class="section-header">Public Class Methods</h3>
+
+		
+			<div id="find-method" class="method-detail ">
+				<a name="M000003"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">find</span><span
+						class="method-args">(ops)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return an array of all gemspecs that match the name and version
+requirements
+</p>
+<p>
+Options:
+</p>
+<ul>
+<li>name e.g. &#8220;foo&#8221; [required]
+
+</li>
+<li>version: version requirements as defined in Gem.source_index.find_name
+
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="find-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 55</span>
+55:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">find</span>(<span class="ruby-identifier">ops</span>)
+56:     <span class="ruby-identifier">name</span>,<span class="ruby-identifier">version</span> = [<span class="ruby-identifier">:name</span>,<span class="ruby-identifier">:version</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>]<span class="ruby-operator">||</span><span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>]}
+57:     <span class="ruby-keyword kw">return</span> <span class="ruby-constant">Gem</span>.<span class="ruby-identifier">source_index</span>.<span class="ruby-identifier">find_name</span>(<span class="ruby-identifier">name</span>,<span class="ruby-identifier">version</span><span class="ruby-operator">||</span>[])
+58:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-method" class="method-detail ">
+				<a name="M000005"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install</span><span
+						class="method-args">(x=nil)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Install a gem, if needed, by running a system command.
+</p>
+<p>
+This dispatches on the first parameter:
+</p>
+<ul>
+<li>nil: install_from_rails_root_cofig_gems_xml
+
+</li>
+<li>File: <a href="Gemini.html#M000007">install_from_xml_file</a>
+
+</li>
+<li>String: <a href="Gemini.html#M000008">install_from_xml_text</a>
+
+</li>
+<li>REXML::Document: <a href="Gemini.html#M000009">install_from_xml_doc</a>
+
+</li>
+<li>Array: <a href="Gemini.html#M000010">install_from_array</a>
+
+</li>
+<li>Hash: <a href="Gemini.html#M000011">install_from_options</a>
+
+</li>
+</ul>
+<p>
+Return status, stdout, stderr
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 73</span>
+73:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install</span>(<span class="ruby-identifier">x</span>=<span class="ruby-keyword kw">nil</span>)
+74:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">class</span><span class="ruby-operator">==</span><span class="ruby-constant">NilClass</span>         <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_rails_root_config_gems_xml</span> <span class="ruby-keyword kw">end</span>
+75:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">class</span><span class="ruby-operator">==</span><span class="ruby-constant">File</span>             <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_file</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword kw">end</span>
+76:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">class</span><span class="ruby-operator">==</span><span class="ruby-constant">String</span>           <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_text</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword kw">end</span>
+77:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">class</span><span class="ruby-operator">==</span><span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Document</span>  <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_doc</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword kw">end</span>
+78:     <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">class</span><span class="ruby-operator">==</span><span class="ruby-constant">Array</span>            <span class="ruby-keyword kw">then</span> <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_array</span>(<span class="ruby-identifier">x</span>) <span class="ruby-keyword kw">end</span>
+79:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_options</span>(<span class="ruby-identifier">x</span>)
+80:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-command-method" class="method-detail ">
+				<a name="M000012"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_command</span><span
+						class="method-args">(ops)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Create the system command to do a gem install
+</p>
+<p>
+Options
+</p>
+<ul>
+<li>name e.g. &#8220;foo&#8221; [required]
+
+</li>
+<li>version e.g. &#8220;>=1.2.3&#8220;
+
+</li>
+<li>trust: no|low|medium|high (aka
+NoSecurity|LowSecurity|MediumSecurity|HighSecurity)
+
+</li>
+<li>append (aka installing): anything to append to the gem install command e.g.
+&#8220; &#8212;no-ri &#8212;no-rdoc &#8212;no-user-install&#8220;
+
+</li>
+</ul>
+<p>
+Return the command as a string
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-command-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 131</span>
+131:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_command</span>(<span class="ruby-identifier">ops</span>)
+132:     <span class="ruby-identifier">name</span>,<span class="ruby-identifier">version</span>,<span class="ruby-identifier">trust</span>,<span class="ruby-identifier">source</span>,<span class="ruby-identifier">append</span>,<span class="ruby-identifier">installing</span> = [<span class="ruby-identifier">:name</span>,<span class="ruby-identifier">:version</span>,<span class="ruby-identifier">:trust</span>,<span class="ruby-identifier">:source</span>,<span class="ruby-identifier">:append</span>,<span class="ruby-identifier">:installing</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>]<span class="ruby-operator">||</span><span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>]}
+133:     <span class="ruby-identifier">append</span><span class="ruby-operator">||=</span><span class="ruby-identifier">installing</span>
+134:     <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;sudo gem install #{name}&quot;</span> <span class="ruby-operator">+</span>
+135:       (<span class="ruby-identifier">version</span> <span class="ruby-value">? </span><span class="ruby-node">&quot; --version \&quot;#{version}\&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-value str">''</span> ) <span class="ruby-operator">+</span>
+136:       (<span class="ruby-identifier">trust</span> <span class="ruby-value">? </span><span class="ruby-node">&quot; --trust-policy #{TRUST_POLICY_NICKNAME[trust]||trust}&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span>
+137:       (<span class="ruby-identifier">source</span> <span class="ruby-value">? </span>[<span class="ruby-operator">*</span><span class="ruby-identifier">source</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-node">&quot; --source \&quot;#{x}\&quot;&quot;</span>}.<span class="ruby-identifier">join</span> <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span>
+138:       (<span class="ruby-identifier">append</span> <span class="ruby-value">? </span>(<span class="ruby-value str">' '</span><span class="ruby-operator">+</span><span class="ruby-identifier">append</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>)
+139:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-array-method" class="method-detail ">
+				<a name="M000010"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_array</span><span
+						class="method-args">(array)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-array-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 98</span>
+ 98:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_array</span>(<span class="ruby-identifier">array</span>)
+ 99:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">x</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">options</span><span class="ruby-operator">|</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install</span>(<span class="ruby-identifier">options</span>)}
+100:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-options-method" class="method-detail ">
+				<a name="M000011"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_options</span><span
+						class="method-args">(options)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Install a gem, if needed, by running a system command.
+</p>
+<p>
+Options
+</p>
+<ul>
+<li>name e.g. &#8220;foo&#8221; [required]
+
+</li>
+<li>version e.g. &#8220;>=1.2.3&#8220;
+
+</li>
+<li>trust: no|low|medium|high (same as
+NoSecurity|LowSecurity|MediumSecurity|HighSecurity)
+
+</li>
+<li>append: anything to append to the gem command e.g. &#8220; &#8212;no-ri
+&#8212;no-rdoc &#8212;no-user-install&#8220;
+
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-options-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 114</span>
+114:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_options</span>(<span class="ruby-identifier">options</span>)
+115:     <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">installed?</span>(<span class="ruby-identifier">options</span>) \
+116:     <span class="ruby-operator">?</span> [<span class="ruby-keyword kw">nil</span>,<span class="ruby-keyword kw">nil</span>,<span class="ruby-keyword kw">nil</span>] \
+117:     <span class="ruby-operator">:</span> <span class="ruby-identifier">commander</span>(<span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_command</span>(<span class="ruby-identifier">options</span>))
+118:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-rails-root-config-gems-xml-method" class="method-detail ">
+				<a name="M000006"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_rails_root_config_gems_xml</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-rails-root-config-gems-xml-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 82</span>
+82:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_rails_root_config_gems_xml</span>
+83:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_file</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">RAILS_ROOT</span><span class="ruby-operator">+</span><span class="ruby-value str">'/config/gems.xml'</span>))
+84:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-xml-doc-method" class="method-detail ">
+				<a name="M000009"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_xml_doc</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-xml-doc-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 94</span>
+94:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_doc</span>
+95:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_array</span>(<span class="ruby-identifier">x</span>.<span class="ruby-identifier">elements</span>.<span class="ruby-identifier">each</span>(<span class="ruby-value str">'gems/gem'</span>){}.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">e</span><span class="ruby-operator">|</span> <span class="ruby-identifier">e</span>.<span class="ruby-identifier">attributes</span>})
+96:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-xml-file-method" class="method-detail ">
+				<a name="M000007"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_xml_file</span><span
+						class="method-args">(file)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-xml-file-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 86</span>
+86:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_file</span>(<span class="ruby-identifier">file</span>)
+87:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_text</span>(<span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">x</span>))
+88:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="install-from-xml-text-method" class="method-detail ">
+				<a name="M000008"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">install_from_xml_text</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p class="missing-docs">(Not documented)</p>
+					
+
+					
+					<div class="method-source-code"
+						id="install-from-xml-text-source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 90</span>
+90:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_text</span>
+91:     <span class="ruby-keyword kw">return</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">install_from_xml_doc</span>(<span class="ruby-constant">REXML</span><span class="ruby-operator">::</span><span class="ruby-constant">Document</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">x</span>))
+92:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="installed--method" class="method-detail ">
+				<a name="M000000"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">installed?</span><span
+						class="method-args">(ops)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return true iff a given name is installed
+</p>
+<p>
+Options
+</p>
+<ul>
+<li>name e.g. &#8220;foo&#8221; [required]
+
+</li>
+<li>version string e.g. &#8220;>=1.2.3&#8220;
+
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="installed--source">
+<pre>
+    <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 42</span>
+42:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">installed?</span>(<span class="ruby-identifier">ops</span>)
+43:     <span class="ruby-identifier">name</span>,<span class="ruby-identifier">version</span> = [<span class="ruby-identifier">:name</span>,<span class="ruby-identifier">:version</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>]<span class="ruby-operator">||</span><span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>]}
+44:     <span class="ruby-identifier">dep</span> = <span class="ruby-constant">Gem</span><span class="ruby-operator">::</span><span class="ruby-constant">Dependency</span>.<span class="ruby-identifier">new</span> <span class="ruby-identifier">name</span>, (<span class="ruby-identifier">version</span><span class="ruby-operator">||</span><span class="ruby-constant">Gem</span><span class="ruby-operator">::</span><span class="ruby-constant">Requirement</span>.<span class="ruby-identifier">default</span>)
+45:     <span class="ruby-operator">!</span><span class="ruby-constant">Gem</span>.<span class="ruby-identifier">source_index</span>.<span class="ruby-identifier">search</span>(<span class="ruby-identifier">dep</span>).<span class="ruby-identifier">empty?</span>
+46:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="sudo-gem-list-method" class="method-detail ">
+				<a name="M000013"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sudo_gem_list</span><span
+						class="method-args">()</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return a lookup hash of all the gems installed on the system, by running
+the system command &#8216;sudo gem list&#8217;.
+</p>
+<ul>
+<li>hash key is a gem name.
+
+</li>
+<li>hash value is an array of the gem&#8217;s installed version numbers.
+
+</li>
+</ul>
+					
+
+					
+					<div class="method-source-code"
+						id="sudo-gem-list-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 149</span>
+149:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sudo_gem_list</span>
+150:     <span class="ruby-ivar">@sudo_gem_list</span>=<span class="ruby-value">`sudo gem list`</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/\n/</span>).<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">line</span><span class="ruby-operator">|</span> <span class="ruby-identifier">line</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp re">/[ \,\(\)]+/</span>)}.<span class="ruby-identifier">inject</span>({}){<span class="ruby-operator">|</span><span class="ruby-identifier">h</span>,<span class="ruby-identifier">v</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">v</span>[<span class="ruby-value">0</span>]]=<span class="ruby-identifier">v</span>[<span class="ruby-value">1</span>,<span class="ruby-identifier">v</span>.<span class="ruby-identifier">length</span>]; <span class="ruby-identifier">h</span>}
+151:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+			<div id="sudo-gem-list-installed--method" class="method-detail ">
+				<a name="M000014"></a>
+
+				<div class="method-heading">
+				
+					<span class="method-name">sudo_gem_list_installed?</span><span
+						class="method-args">(ops)</span>
+					<span class="method-click-advice">click to toggle source</span>
+				
+				</div>
+
+				<div class="method-description">
+					
+					<p>
+Return true iff the <a href="Gemini.html#M000013">sudo_gem_list</a> hash
+shows a given gem is installed.
+</p>
+					
+
+					
+					<div class="method-source-code"
+						id="sudo-gem-list-installed--source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/sixarm_ruby_gemini.rb, line 156</span>
+156:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sudo_gem_list_installed?</span>(<span class="ruby-identifier">ops</span>)
+157:     <span class="ruby-identifier">name</span>,<span class="ruby-identifier">version</span> = [<span class="ruby-identifier">:name</span>,<span class="ruby-identifier">:version</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>]<span class="ruby-operator">||</span><span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>.<span class="ruby-identifier">to_s</span>]}
+158:     <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sudo_gem_list</span>[<span class="ruby-identifier">name</span>] <span class="ruby-keyword kw">and</span> (<span class="ruby-operator">!</span><span class="ruby-identifier">version</span> <span class="ruby-keyword kw">or</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">sudo_gem_list</span>[<span class="ruby-identifier">name</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">version</span>))
+159:   <span class="ruby-keyword kw">end</span></pre>
+					</div>
+					
+				</div>
+
+				
+			</div>
+
+		
+		</div>
+	
+
+	</div>
+
+
+	<div id="rdoc-debugging-section-dump" class="debugging-section">
+	
+		<p>Disabled; run with --debug to generate this.</p>
+	
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+
+</body>
+</html>
+
