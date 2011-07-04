@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 =begin rdoc
 
 = SixArm Ruby Gem: Gemini is a gem initialization helper
@@ -47,7 +49,7 @@ class Gemini
 
 
   # Return an array of all gemspecs that match the name and version requirements
-  # 
+  #
   # Options:
   # - name e.g. "foo" [required]
   # - version: version requirements as defined in Gem.source_index.find_name
@@ -157,6 +159,6 @@ class Gemini
     name,version = [:name,:version].map{|k| ops[k]||ops[k.to_s]}
     self.sudo_gem_list[name] and (!version or self.sudo_gem_list[name].include?(version))
   end
-  
+
 end
 
