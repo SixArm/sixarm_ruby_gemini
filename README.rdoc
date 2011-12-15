@@ -1,7 +1,6 @@
+SixArm.com » Ruby » Gemini is a gem initialization helper
 
-= SixArm Ruby Gem: Gemini is a gem initialization helper
-
-Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
+Author:: Joel Parker Henderson, joel@joelparkerhenderson.com
 Copyright:: Copyright (c) 2008-2010 Joel Parker Henderson
 License:: CreativeCommons License, Non-commercial Share Alike
 License:: LGPL, GNU Lesser General Public License
