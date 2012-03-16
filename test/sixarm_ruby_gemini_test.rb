@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+require 'test/unit'
 require 'simplecov'
 SimpleCov.start
-require 'test/unit'
 require 'sixarm_ruby_gemini'
 
 class GeminiTest < Test::Unit::TestCase

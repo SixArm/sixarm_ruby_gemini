@@ -1,4 +1,4 @@
-SixArm.com » Ruby » Gemini is a gem initialization helper
+# SixArm.com » Ruby » <br> Gemini is a gem initialization helper
 
 * Docs: <http://sixarm.com/sixarm_ruby_gemini/doc>
 * Repo: <http://github.com/sixarm/sixarm_ruby_gemini>

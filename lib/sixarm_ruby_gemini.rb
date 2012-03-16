@@ -1,31 +1,6 @@
 # -*- coding: utf-8 -*-
-
 =begin rdoc
-
-= SixArm Ruby Gem: Gemini is a gem initialization helper
-
-Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
-Copyright:: Copyright (c) 2008-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
-
-Simple gem methods.
-
-Example:
-  require 'gemini'
-
-  Gemini.installed?(:name=>'passenger',:version=>'2.0.0')
-  => true
-
-  Gemini.install(:name=>'passenger',:version=>'2.0.0')
-  => install passenger 2.0.0 if necessary
-
-  Gemini.find(:name=>'passenger')
-   => all gemspecs with name 'passenger'
-
-  Gemini.find(:name=>'passenger',:version=>version_requiremens)
-  => all gemspecs with name 'passenger' that match the requirments
-
+Please see README
 =end
 
 require 'rexml/document'
