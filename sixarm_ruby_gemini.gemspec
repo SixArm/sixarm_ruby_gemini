@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_gemini"
-  s.summary           = "SixArm Ruby Gem: Gemini provides gem initial setup method to see if a gem is installed"
+  s.summary           = "SixArm.com » Ruby » Gemini provides gem initial setup method to see if a gem is installed"
   s.version           = "1.2.4"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
@@ -10,6 +10,8 @@ Gem::Specification.new do |s|
   s.cert_chain        = ['/home/sixarm/keys/certs/sixarm-rsa1024-x509-public.pem']
 
   s.platform          = Gem::Platform::RUBY
+  s.require_path      = 'lib'
+  s.has_rdoc          = true
 
   top_files           = [".gemtest", "CHANGELOG.txt", "INSTALL.txt", "LICENSE.txt", "Rakefile", "README.md", "VERSION"]
   lib_files           = ["lib/#{s.name}.rb"]
