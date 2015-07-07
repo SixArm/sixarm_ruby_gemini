@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'simplecov'
+require "minitest/autorun"
+require "simplecov"
 SimpleCov.start
-require 'sixarm_ruby_gemini'
+require "sixarm_ruby_gemini"
 
 class GeminiTest < Test::Unit::TestCase
 

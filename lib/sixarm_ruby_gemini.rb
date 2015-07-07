@@ -3,8 +3,8 @@
 Please see README
 =end
 
-require 'rexml/document'
-require 'sixarm_ruby_commander'
+require "rexml/document"
+require "sixarm_ruby_commander"
 
 class Gemini
 
