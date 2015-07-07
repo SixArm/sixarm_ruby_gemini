@@ -63,8 +63,3 @@ Find matching gems:
 
     Gemini.find(:name=>'foo',:version=>version_requiremens)
     => all gemspecs with name 'foo' that match the requirments
-
-
-## Changes
-
-* 2012-03-14 1.2.4 Update docs, tests
