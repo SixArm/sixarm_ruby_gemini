@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_gemini"
-  s.summary           = "SixArm.com » Ruby » Gemini"
+  s.summary           = "SixArm.com → Ruby → Gemini"
   s.description       = "Gemini provides gem initial setup method to see if a gem is installed"
   s.version           = "1.2.5"
 
