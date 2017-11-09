@@ -3,7 +3,7 @@
 * Doc: <http://sixarm.com/sixarm_ruby_gemini/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_gemini>
 * Repo: <http://github.com/sixarm/sixarm_ruby_gemini>
-<!--HEADER-SHUT-->
+<!--header-shut-->
 
 
 ## Introduction
@@ -16,7 +16,7 @@ Want to help? We're happy to get pull requests.
 
 
 
-<!--INSTALL-OPEN-->
+<!--install-opent-->
 
 ## Install
 
@@ -38,7 +38,7 @@ To require the gem in your code:
 
     require "sixarm_ruby_gemini"
 
-<!--INSTALL-SHUT-->
+<!--install-shut-->
 
 
 ## Examples
