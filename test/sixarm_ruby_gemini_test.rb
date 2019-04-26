@@ -4,7 +4,7 @@ require "simplecov"
 SimpleCov.start
 require "sixarm_ruby_gemini"
 
-class GeminiTest < Test::Unit::TestCase
+class GeminiTest < Minitest::Test
 
  def test_gemini_installed_false
   assert(!Gemini.installed?(:name=>'gem-should-not-exist',:version=>'9.9.9'))
